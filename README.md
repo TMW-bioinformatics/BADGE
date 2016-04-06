@@ -11,7 +11,7 @@
 ###1.	Install BADGE on a Linux OS and check installationNOTE: **NAMING CONVENTIONS** → avoid the usage of **special characters and spaces** when naming files!!!!!
 ***
 <ol type="a">
-<li>Download Linux version of BADGE from https://github.com/TMW-bioinformatics/BADGE and extract it to your home directory (home/your-home-directory/BADGE) </li> 
+<li>Download Linux version of BADGE from https://github.com/TMW-bioinformatics/BADGE/releases and extract it to your home directory (home/your-home-directory/BADGE) </li> 
 <li>Start check_BADGE.sh within the home/your-home-directory/BADGE/t-data directory from command line using a terminal (command: ./check_BADGE.sh) </li> 
  <li>If your installation was successful proceed to item 2 of the quick guide </li>
 <li>If you need a more detailed instruction → see manual section Step-by-Step guide starting with Step 3 (for Linux) </li>
@@ -26,7 +26,7 @@
 <li>NOTE: In case no DMGs are found with current settings for minimum DMG occurrence, BADGE can be interactive, waiting for your input –→ BADGE will ask you if you want to set a new value for the parameter or proceed with no changes </li>  
 <li>Key results will be found in a file like BADGE_A_vs_B_final_out.tsv (A vs B will be replaced by your group names) using a spreadsheet application, sequences can be found in the corresponding fasta-file (BADGE_A_vs_B_DMGs.fasta) and opened using a text editor (c.f. figure 3) </li></ol>
 <a name="anchor1"></a>
-![fig1](images/graphical_guide4.png)Figure 1: Data requirements for BADGE. Naming and structure are important for BADGE to work. Corresponding folders and files within genomes and orfs directory have to be named identically. Avoid any spaces or special characters.
+![fig1](images/graphical_guide4.png)Figure 1: Data requirements for BADGE. **Naming and structure are important** for BADGE to work. Corresponding folders and files within genomes and orfs directory have to be named identically. Avoid any spaces or special characters. **NOTE: fasta headers need not be modified** 
 
 ![fig2](images/figure2.png) Figure 2: Running BADGE. Move to BADGE directory (cd command) and execute BADGE.sh (./BADGE.sh). Interact with script in case your chosen minimum DMG occurrence results in no DMGs![fig3](images/figure3.png) Figure 3: Output of BADGE. Key results can be found within a directory named as the comparison calculated (here A\_vs\_B). The central file, BADGE_A\_vs\_B\_final\_out.tsv contains the most important data about the identified DMGs and can be viewed and modified using a spreadsheet application.
 <a name="anchor4"></a>

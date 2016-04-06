@@ -1,0 +1,9 @@
+DMG_ID	percent_occurrence	dc_blast_hit	max_blastn_hit_length	ORF_ID	ORF_length	annotation	contig	start	stop
+DMG_1	100	no	18	A_B_marker_1_B_1	1125		B_1_genome	1987	3111
+				A_B_marker_1_B_2	1125		B_2_genome	1987	3111
+DMG_2	100	no	14	A_B_marker_2_qcov_above_95_in_B_B_1	765		B_1_genome	3112	3876
+				A_B_marker_2_qcov_above_95_in_B_B_2	765		B_2_genome	3112	3876
+DMG_3	100	no	15	A_B_marker_3_percident_above_95_in_B_B_1	1371		B_1_genome	3877	5247
+				A_B_marker_3_percident_above_95_in_B_B_2	1371		B_2_genome	3877	5247
+DMG_4	100	no	23	B_marker_1_B_1	846		B_1_genome	1141	1986
+				B_marker_1_B_2	846		B_2_genome	1141	1986

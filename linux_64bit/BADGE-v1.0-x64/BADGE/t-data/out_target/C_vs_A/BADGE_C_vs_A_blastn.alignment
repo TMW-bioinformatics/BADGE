@@ -1,0 +1,218 @@
+<HTML>
+<TITLE>BLAST Search Results</TITLE>
+<BODY BGCOLOR="#FFFFFF" LINK="#0000FF" VLINK="#660099" ALINK="#660099">
+<PRE>
+
+<b>BLASTN 2.2.29+</b>
+
+
+<b><a
+href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&cmd=Re
+trieve&list_uids=9254694&dopt=Citation">Reference</a>:</b>
+Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&auml;ffer,
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997),
+"Gapped BLAST and PSI-BLAST: a new generation of protein database
+search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+
+Database: A_genomes
+           2 sequences; 30,340 total letters
+
+
+
+<b>Query=</b> DMG_1 B_C_marker_1_C_1
+
+Length=1137
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+lcl|A_2_genome                                                        <a href=#A_2_genome>26.5</a>    0.35 
+lcl|A_1_genome                                                        <a href=#A_1_genome>22.9</a>    4.2  
+
+
+>lcl|A_2_genome<a name=A_2_genome></a> 
+Length=15078
+
+ Score = 26.5 bits (28),  Expect = 0.35
+ Identities = 17/19 (89%), Gaps = 0/19 (0%)
+ Strand=Plus/Minus
+
+Query  368   TGCATTTTACCCATAAAAT  386
+             || ||| ||||||||||||
+Sbjct  4461  TGTATTATACCCATAAAAT  4443
+
+
+ Score = 22.9 bits (24),  Expect = 4.2
+ Identities = 12/12 (100%), Gaps = 0/12 (0%)
+ Strand=Plus/Plus
+
+Query  331  GACTGGATTAAA  342
+            ||||||||||||
+Sbjct  90   GACTGGATTAAA  101
+
+
+ Score = 22.9 bits (24),  Expect = 4.2
+ Identities = 12/12 (100%), Gaps = 0/12 (0%)
+ Strand=Plus/Minus
+
+Query  547   TATTTTGATTTC  558
+             ||||||||||||
+Sbjct  5545  TATTTTGATTTC  5534
+
+
+ Score = 22.9 bits (24),  Expect = 4.2
+ Identities = 12/12 (100%), Gaps = 0/12 (0%)
+ Strand=Plus/Plus
+
+Query  602   AACCTCGGTACG  613
+             ||||||||||||
+Sbjct  6741  AACCTCGGTACG  6752
+
+
+ Score = 22.9 bits (24),  Expect = 4.2
+ Identities = 12/12 (100%), Gaps = 0/12 (0%)
+ Strand=Plus/Plus
+
+Query  548   ATTTTGATTTCC  559
+             ||||||||||||
+Sbjct  7063  ATTTTGATTTCC  7074
+
+
+ Score = 22.9 bits (24),  Expect = 4.2
+ Identities = 12/12 (100%), Gaps = 0/12 (0%)
+ Strand=Plus/Minus
+
+Query  398   TAGCATTAGATA  409
+             ||||||||||||
+Sbjct  8208  TAGCATTAGATA  8197
+
+
+ Score = 22.9 bits (24),  Expect = 4.2
+ Identities = 12/12 (100%), Gaps = 0/12 (0%)
+ Strand=Plus/Minus
+
+Query  1021  GCTGGTAAAACA  1032
+             ||||||||||||
+Sbjct  8680  GCTGGTAAAACA  8669
+
+
+
+Lambda      K        H
+   0.634    0.408    0.912 
+
+Gapped
+Lambda      K        H
+   0.625    0.410    0.780 
+
+Effective search space used: 33877636
+
+
+<b>Query=</b> DMG_2 C_marker_1_C_1_special_characters_in_header
+
+Length=1467
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+lcl|A_2_genome                                                        <a href=#A_2_genome>24.7</a>    1.6  
+lcl|A_1_genome                                                        <a href=#A_1_genome>24.7</a>    1.6  
+
+
+>lcl|A_2_genome<a name=A_2_genome></a> 
+Length=15078
+
+ Score = 24.7 bits (26),  Expect = 1.6
+ Identities = 13/13 (100%), Gaps = 0/13 (0%)
+ Strand=Plus/Minus
+
+Query  1274  AATTAGTTTATGA  1286
+             |||||||||||||
+Sbjct  2658  AATTAGTTTATGA  2646
+
+
+ Score = 24.7 bits (26),  Expect = 1.6
+ Identities = 13/13 (100%), Gaps = 0/13 (0%)
+ Strand=Plus/Plus
+
+Query  260   TGGAATATTTACG  272
+             |||||||||||||
+Sbjct  8478  TGGAATATTTACG  8490
+
+
+ Score = 22.9 bits (24),  Expect = 5.5
+ Identities = 12/12 (100%), Gaps = 0/12 (0%)
+ Strand=Plus/Plus
+
+Query  133  CCATTTGGAAAT  144
+            ||||||||||||
+Sbjct  192  CCATTTGGAAAT  203
+
+
+ Score = 22.9 bits (24),  Expect = 5.5
+ Identities = 12/12 (100%), Gaps = 0/12 (0%)
+ Strand=Plus/Minus
+
+Query  382  GAAACAGCAATT  393
+            ||||||||||||
+Sbjct  458  GAAACAGCAATT  447
+
+
+ Score = 22.9 bits (24),  Expect = 5.5
+ Identities = 12/12 (100%), Gaps = 0/12 (0%)
+ Strand=Plus/Plus
+
+Query  44    ATGATTATGAAA  55
+             ||||||||||||
+Sbjct  4697  ATGATTATGAAA  4708
+
+
+ Score = 22.9 bits (24),  Expect = 5.5
+ Identities = 12/12 (100%), Gaps = 0/12 (0%)
+ Strand=Plus/Minus
+
+Query  1045  AAACTTTCTAAT  1056
+             ||||||||||||
+Sbjct  5992  AAACTTTCTAAT  5981
+
+
+ Score = 22.9 bits (24),  Expect = 5.5
+ Identities = 12/12 (100%), Gaps = 0/12 (0%)
+ Strand=Plus/Minus
+
+Query  1050  TTCTAATAATGC  1061
+             ||||||||||||
+Sbjct  7752  TTCTAATAATGC  7741
+
+
+ Score = 22.9 bits (24),  Expect = 5.5
+ Identities = 12/12 (100%), Gaps = 0/12 (0%)
+ Strand=Plus/Plus
+
+Query  1411   AACAAGATGAAA  1422
+              ||||||||||||
+Sbjct  12200  AACAAGATGAAA  12211
+
+
+
+Lambda      K        H
+   0.634    0.408    0.912 
+
+Gapped
+Lambda      K        H
+   0.625    0.410    0.780 
+
+Effective search space used: 43877296
+
+
+  Database: A_genomes
+    Posted date:  Feb 19, 2016  1:40 PM
+  Number of letters in database: 30,340
+  Number of sequences in database:  2
+
+
+
+Matrix: blastn matrix 2 -3
+Gap Penalties: Existence: 5, Extension: 2
+</PRE>
+</BODY>
+</HTML>

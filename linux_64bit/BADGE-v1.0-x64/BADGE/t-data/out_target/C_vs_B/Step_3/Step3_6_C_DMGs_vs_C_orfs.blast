@@ -1,0 +1,8 @@
+A_C_marker_1_C_1	A_C_marker_1_C_2	1473	1473	100.00	1473	0.0
+A_C_marker_1_C_1	A_C_marker_1_C_1	1473	1473	100.00	1473	0.0
+A_C_marker_1_C_2	A_C_marker_1_C_2	1473	1473	100.00	1473	0.0
+A_C_marker_1_C_2	A_C_marker_1_C_1	1473	1473	100.00	1473	0.0
+C_marker_1_C_1_special_characters_in_header	C_marker_1_C_2	1467	1467	100.00	1467	0.0
+C_marker_1_C_1_special_characters_in_header	C_marker_1_C_1_special_characters_in_header	1467	1467	100.00	1467	0.0
+C_marker_1_C_2	C_marker_1_C_2	1467	1467	100.00	1467	0.0
+C_marker_1_C_2	C_marker_1_C_1_special_characters_in_header	1467	1467	100.00	1467	0.0

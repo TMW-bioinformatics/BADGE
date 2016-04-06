@@ -1,0 +1,74 @@
+<HTML>
+<TITLE>BLAST Search Results</TITLE>
+<BODY BGCOLOR="#FFFFFF" LINK="#0000FF" VLINK="#660099" ALINK="#660099">
+<PRE>
+
+<b>BLASTN 2.2.29+</b>
+
+
+<b><a
+href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&cmd=Re
+trieve&list_uids=9254694&dopt=Citation">Reference</a>:</b>
+Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&auml;ffer,
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997),
+"Gapped BLAST and PSI-BLAST: a new generation of protein database
+search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+
+Database: B_genomes
+           2 sequences; 14,677 total letters
+
+
+
+<b>Query=</b> DMG_1 A_C_marker_1_C_1
+
+Length=1473
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+   0.634    0.408    0.912 
+
+Gapped
+Lambda      K        H
+   0.625    0.410    0.780 
+
+Effective search space used: 21302655
+
+
+<b>Query=</b> DMG_2 C_marker_1_C_1_special_characters_in_header
+
+Length=1467
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+   0.634    0.408    0.912 
+
+Gapped
+Lambda      K        H
+   0.625    0.410    0.780 
+
+Effective search space used: 21214809
+
+
+  Database: B_genomes
+    Posted date:  Feb 19, 2016  1:40 PM
+  Number of letters in database: 14,677
+  Number of sequences in database:  2
+
+
+
+Matrix: blastn matrix 2 -3
+Gap Penalties: Existence: 5, Extension: 2
+Window for multiple hits: 40
+</PRE>
+</BODY>
+</HTML>
