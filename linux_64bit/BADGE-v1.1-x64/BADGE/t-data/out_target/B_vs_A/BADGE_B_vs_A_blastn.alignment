@@ -1,0 +1,164 @@
+<HTML>
+<TITLE>BLAST Search Results</TITLE>
+<BODY BGCOLOR="#FFFFFF" LINK="#0000FF" VLINK="#660099" ALINK="#660099">
+<PRE>
+
+<b>BLASTN 2.2.29+</b>
+
+
+<b><a
+href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&cmd=Re
+trieve&list_uids=9254694&dopt=Citation">Reference</a>:</b>
+Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&auml;ffer,
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997),
+"Gapped BLAST and PSI-BLAST: a new generation of protein database
+search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+
+Database: A_genomes
+           2 sequences; 30,340 total letters
+
+
+
+<b>Query=</b> DMG_1 B_C_marker_1_B_1
+
+Length=1137
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+lcl|A_2_genome                                                        <a href=#A_2_genome>26.5</a>    0.35 
+lcl|A_1_genome                                                        <a href=#A_1_genome>22.9</a>    4.2  
+
+
+>lcl|A_2_genome<a name=A_2_genome></a> 
+Length=15078
+
+ Score = 26.5 bits (28),  Expect = 0.35
+ Identities = 17/19 (89%), Gaps = 0/19 (0%)
+ Strand=Plus/Minus
+
+Query  368   TGCATTTTACCCATAAAAT  386
+             || ||| ||||||||||||
+Sbjct  4461  TGTATTATACCCATAAAAT  4443
+
+
+ Score = 22.9 bits (24),  Expect = 4.2
+ Identities = 12/12 (100%), Gaps = 0/12 (0%)
+ Strand=Plus/Plus
+
+Query  331  GACTGGATTAAA  342
+            ||||||||||||
+Sbjct  90   GACTGGATTAAA  101
+
+
+ Score = 22.9 bits (24),  Expect = 4.2
+ Identities = 12/12 (100%), Gaps = 0/12 (0%)
+ Strand=Plus/Minus
+
+Query  547   TATTTTGATTTC  558
+             ||||||||||||
+Sbjct  5545  TATTTTGATTTC  5534
+
+
+ Score = 22.9 bits (24),  Expect = 4.2
+ Identities = 12/12 (100%), Gaps = 0/12 (0%)
+ Strand=Plus/Plus
+
+Query  602   AACCTCGGTACG  613
+             ||||||||||||
+Sbjct  6741  AACCTCGGTACG  6752
+
+
+ Score = 22.9 bits (24),  Expect = 4.2
+ Identities = 12/12 (100%), Gaps = 0/12 (0%)
+ Strand=Plus/Plus
+
+Query  548   ATTTTGATTTCC  559
+             ||||||||||||
+Sbjct  7063  ATTTTGATTTCC  7074
+
+
+ Score = 22.9 bits (24),  Expect = 4.2
+ Identities = 12/12 (100%), Gaps = 0/12 (0%)
+ Strand=Plus/Minus
+
+Query  398   TAGCATTAGATA  409
+             ||||||||||||
+Sbjct  8208  TAGCATTAGATA  8197
+
+
+ Score = 22.9 bits (24),  Expect = 4.2
+ Identities = 12/12 (100%), Gaps = 0/12 (0%)
+ Strand=Plus/Minus
+
+Query  1021  GCTGGTAAAACA  1032
+             ||||||||||||
+Sbjct  8680  GCTGGTAAAACA  8669
+
+
+
+Lambda      K        H
+   0.634    0.408    0.912 
+
+Gapped
+Lambda      K        H
+   0.625    0.410    0.780 
+
+Effective search space used: 33877636
+
+
+<b>Query=</b> DMG_2 B_marker_1_B_1
+
+Length=846
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+lcl|A_1_genome                                                        <a href=#A_1_genome>28.3</a>    0.074
+lcl|A_2_genome                                                        <a href=#A_2_genome>24.7</a>    0.90 
+
+
+>lcl|A_1_genome<a name=A_1_genome></a> 
+Length=15262
+
+ Score = 28.3 bits (30),  Expect = 0.074
+ Identities = 20/22 (91%), Gaps = 1/22 (5%)
+ Strand=Plus/Minus
+
+Query  555   TGATATTA-ATCTAAATAATTC  575
+             ||| |||| |||||||||||||
+Sbjct  5847  TGAAATTACATCTAAATAATTC  5826
+
+
+ Score = 24.7 bits (26),  Expect = 0.90
+ Identities = 15/16 (94%), Gaps = 0/16 (0%)
+ Strand=Plus/Plus
+
+Query  358   AACTTAAAAATTAATT  373
+             |||| |||||||||||
+Sbjct  9889  AACTAAAAAATTAATT  9904
+
+
+
+Lambda      K        H
+   0.634    0.408    0.912 
+
+Gapped
+Lambda      K        H
+   0.625    0.410    0.780 
+
+Effective search space used: 25091712
+
+
+  Database: A_genomes
+    Posted date:  Feb 19, 2016  1:40 PM
+  Number of letters in database: 30,340
+  Number of sequences in database:  2
+
+
+
+Matrix: blastn matrix 2 -3
+Gap Penalties: Existence: 5, Extension: 2
+</PRE>
+</BODY>
+</HTML>
