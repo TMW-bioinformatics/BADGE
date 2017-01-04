@@ -1,0 +1,56 @@
+Current settings for BADGE run:
+
+#clean up - default true
+clean_up=false
+
+#Minimum DMG occurrence - default 1
+min_DMG_occurrence=1
+
+#Check header for special character and replace by _ - default true
+special_character=true
+
+#BLAST settings:
+
+#Number of parallel blast processes - default 4
+num_blast_proc=4
+
+#MEGABLAST settings - default 95 / 0.000000000000001 / 0.95 / 0.50 / false
+megablast_perc_identity_cut=95
+megablast_e_value=0.000000000000001
+megablast_within_group_qscov=0.95
+megablast_between_group_qscov=0.50
+dc_mode=false
+
+#DC-MEGABLAST filter settings - default true / 70 / 10 / 0.50)
+dc_filter=true
+dc_perc_identity_cut=70
+dc_blast_e_value=10
+dc_between_group_qscov=0.50
+
+#BLASTN filter settings - defaul true / 95 / 10 / 0.25
+blastn_filter=true
+blastn_perc_identity_cut=95
+blastn_e_value=10
+blastn_between_group_qscov=0.25
+
+#Search for potential markers via protein blastp - PROTEIN-LEVEL BADGE
+#PROTEIN-LEVEL options - default false / 50 / 10 / 0.50 / 0.50 / true
+protein_level=false
+blastp_perc_identity_cut=50
+blastp_e_value=10
+blastp_within_group_qscov=0.50
+blastp_between_group_qscov=0.50
+fastatranslate_geneticcode=11
+fastatranslate_frame=1
+#clean up translated orfs - true means clean up files after BADGE is done
+protein_level_clean_up=true
+
+#Identify overlapping DMGs - default false
+identify_overlapping=false
+
+#Search for DMGs with ANY differences - MUT-LEVEL mode
+#MUT-LEVEL otions - default false / false
+mut_level_nt=false
+mut_level_aa=false
+
+Elapsed processor time: 0min and 43sec
