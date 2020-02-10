@@ -458,7 +458,7 @@ if $protein_level
 		dbname=$(basename "$i" .fasta)
 		if [[ ! -e $type1_orfs_path_aa/$dbname".fasta" ]]
 			then
-			$blastbin_path/fastatranslate -f $i --geneticcode $fastatranslate_geneticcode -F $fastatranslate_frame | sed "s/translate(1)//" | awk '{gsub("[\\|\\[\\],.:]+", " "); print}' | awk '{gsub("[*]+", ""); print}' | sed '/^$/d' > $type1_orfs_path_aa/$dbname".fasta"
+			$blastbin_path/fastatranslate -f $i --geneticcode $fastatranslate_geneticcode -F $fastatranslate_frame | sed "s/translate(1)//" | awk '{gsub("[\\|\\[\\],.:]+", " "); print}' | sed '/^$/d' > $type1_orfs_path_aa/$dbname".fasta"
 		fi
 	done
 	
@@ -467,7 +467,7 @@ if $protein_level
 		dbname=$(basename "$i" .fasta)
 		if [[ ! -e $type2_orfs_path_aa/$dbname".fasta" ]]
 			then
-			$blastbin_path/fastatranslate -f $i --geneticcode $fastatranslate_geneticcode -F $fastatranslate_frame | sed "s/translate(1)//" | awk '{gsub("[\\|\\[\\],.:]+", " "); print}' | awk '{gsub("[*]+", ""); print}' | sed '/^$/d' > $type2_orfs_path_aa/$dbname".fasta"
+			$blastbin_path/fastatranslate -f $i --geneticcode $fastatranslate_geneticcode -F $fastatranslate_frame | sed "s/translate(1)//" | awk '{gsub("[\\|\\[\\],.:]+", " "); print}' | sed '/^$/d' > $type2_orfs_path_aa/$dbname".fasta"
 		fi
 	done
 
@@ -544,7 +544,7 @@ if $protein_level
 
 	cat $type2"_orfs_aa_tmp.fasta" > split_input.fasta
 	seq_num=`grep -c ">" split_input.fasta`
-	if [[ $num_blast_proc -gt $seq_num ]]
+	if [[ $set_num_blast_proc -gt $seq_num ]]
 		then
 		num_blast_proc=1
 		else
@@ -585,7 +585,7 @@ else
 
 	cat $type2"_orfs_tmp.fasta" > split_input.fasta
 	seq_num=`grep -c ">" split_input.fasta`
-	if [[ $num_blast_proc -gt $seq_num ]]
+	if [[ $set_num_blast_proc -gt $seq_num ]]
 		then
 		num_blast_proc=1
 		else
@@ -631,7 +631,7 @@ echo -e "Number of DMGs after orf filter: \e[32m\e[1m$num_DMGs_orf_filtered\e[0m
 
 #check if number of blast processes has to be reduced
 
-if [[ $num_blast_proc -gt $num_DMGs_orf_filtered ]]
+if [[ $set_num_blast_proc -gt $num_DMGs_orf_filtered ]]
 	then
 	num_blast_proc=1
 	else
@@ -664,7 +664,7 @@ fi
 
 cat "Step1_4_"$type1"_DMGs.fasta" > split_input.fasta
 	seq_num=`grep -c ">" split_input.fasta`
-	if [[ $num_blast_proc -gt $seq_num ]]
+	if [[ $set_num_blast_proc -gt $seq_num ]]
 		then
 		num_blast_proc=1
 		else
@@ -714,7 +714,7 @@ echo -e "Number of DMGs after genome filter: \e[32m\e[1m$num_DMGs_genomes_filter
 
 #check if number of blast processes has to be reduced
 
-if [[ $num_blast_proc -gt $num_DMGs_genomes_filtered ]]
+if [[ $set_num_blast_proc -gt $num_DMGs_genomes_filtered ]]
 	then
 	num_blast_proc=1
 	else
@@ -748,7 +748,7 @@ if [[ ! -s "Step2_4_"$type1"_DMGs.fasta" ]]
 
 			cat "Step2_4_"$type1"_DMGs.fasta" > split_input.fasta
 			seq_num=`grep -c ">" split_input.fasta`
-	if [[ $num_blast_proc -gt $seq_num ]]
+	if [[ $set_num_blast_proc -gt $seq_num ]]
 		then
 		num_blast_proc=1
 		else
@@ -793,7 +793,7 @@ if [[ ! -s "Step2_4_"$type1"_DMGs.fasta" ]]
 
 			cat "Step2_4_"$type1"_DMGs.fasta" > split_input.fasta
 			seq_num=`grep -c ">" split_input.fasta`
-	if [[ $num_blast_proc -gt $seq_num ]]
+	if [[ $set_num_blast_proc -gt $seq_num ]]
 		then
 		num_blast_proc=1
 		else
@@ -882,7 +882,7 @@ if $protein_level
 
 	cat "Step3_5_"$type1"_DMGs_tmp.fasta" > split_input.fasta
 	seq_num=`grep -c ">" split_input.fasta`
-	if [[ $num_blast_proc -gt $seq_num ]]
+	if [[ $set_num_blast_proc -gt $seq_num ]]
 		then
 		num_blast_proc=1
 		else
@@ -917,7 +917,7 @@ else
 
 	cat "Step3_5_"$type1"_DMGs_tmp.fasta" > split_input.fasta
 	seq_num=`grep -c ">" split_input.fasta`
-	if [[ $num_blast_proc -gt $seq_num ]]
+	if [[ $set_num_blast_proc -gt $seq_num ]]
 		then
 		num_blast_proc=1
 		else
@@ -1039,7 +1039,7 @@ if $protein_level
 
 		cat "Step3_5_"$type1"_DMGs.fasta" > split_input.fasta
 		seq_num=`grep -c ">" split_input.fasta`
-	if [[ $num_blast_proc -gt $seq_num ]]
+	if [[ $set_num_blast_proc -gt $seq_num ]]
 		then
 		num_blast_proc=1
 		else
@@ -1080,7 +1080,7 @@ else
 
 		cat "Step3_5_"$type1"_DMGs.fasta" > split_input.fasta
 		seq_num=`grep -c ">" split_input.fasta`
-	if [[ $num_blast_proc -gt $seq_num ]]
+	if [[ $set_num_blast_proc -gt $seq_num ]]
 		then
 		num_blast_proc=1
 		else
@@ -1215,7 +1215,7 @@ echo -e "Number of DMGs after occurrence filter: \e[32m\e[1m$num_DMGs_nblast\e[0
 
 #check if number of blast processes has to be reduced
 
-if [[ $num_blast_proc -gt $num_DMGs_nblast ]]
+if [[ $set_num_blast_proc -gt $num_DMGs_nblast ]]
 	then
 	num_blast_proc=1
 	else
@@ -1246,7 +1246,7 @@ if $dc_filter
 
 	cat "Step4_1_"$type1"_DMGs.fasta" > split_input.fasta
 	seq_num=`grep -c ">" split_input.fasta`
-	if [[ $num_blast_proc -gt $seq_num ]]
+	if [[ $set_num_blast_proc -gt $seq_num ]]
 		then
 		num_blast_proc=1
 		else
@@ -1296,7 +1296,7 @@ if $dc_filter
 
 	cat "Step4_5_"$type1"_DMGs.fasta" > split_input.fasta
 	seq_num=`grep -c ">" split_input.fasta`
-	if [[ $num_blast_proc -gt $seq_num ]]
+	if [[ $set_num_blast_proc -gt $seq_num ]]
 		then
 		num_blast_proc=1
 		else
@@ -1378,7 +1378,7 @@ if $dc_filter
 
 		cat "Step4_5_"$type1"_DMGs.fasta" > split_input.fasta
 		seq_num=`grep -c ">" split_input.fasta`
-	if [[ $num_blast_proc -gt $seq_num ]]
+	if [[ $set_num_blast_proc -gt $seq_num ]]
 		then
 		num_blast_proc=1
 		else
@@ -1499,7 +1499,7 @@ if $dc_filter
 
 	#check if number of blast processes has to be reduced
 
-	if [[ $num_blast_proc -gt $num_DMGs_dc_megablast ]]
+	if [[ $set_num_blast_proc -gt $num_DMGs_dc_megablast ]]
 		then
 		num_blast_proc=1
 		else
@@ -1543,7 +1543,7 @@ if $blastn_filter
 
 	cat "Step5_1_"$type1"_DMGs.fasta" > split_input.fasta
 	seq_num=`grep -c ">" split_input.fasta`
-	if [[ $num_blast_proc -gt $seq_num ]]
+	if [[ $set_num_blast_proc -gt $seq_num ]]
 		then
 		num_blast_proc=1
 		else
@@ -1585,7 +1585,7 @@ if $blastn_filter
 
 	cat "Step5_5_"$type1"_DMGs.fasta" > split_input.fasta
 	seq_num=`grep -c ">" split_input.fasta`
-	if [[ $num_blast_proc -gt $seq_num ]]
+	if [[ $set_num_blast_proc -gt $seq_num ]]
 		then
 		num_blast_proc=1
 		else
@@ -1671,7 +1671,7 @@ if $blastn_filter
 
 		cat "Step5_5_"$type1"_DMGs.fasta" > split_input.fasta
 		seq_num=`grep -c ">" split_input.fasta`
-	if [[ $num_blast_proc -gt $seq_num ]]
+	if [[ $set_num_blast_proc -gt $seq_num ]]
 		then
 		num_blast_proc=1
 		else
@@ -1791,7 +1791,7 @@ if $blastn_filter
 
 	#check if number of blast processes has to be reduced
 
-	if [[ $num_blast_proc -gt $num_DMGs_blastn_hits ]]
+	if [[ $set_num_blast_proc -gt $num_DMGs_blastn_hits ]]
 		then
 		num_blast_proc=1
 		else
@@ -1864,7 +1864,7 @@ get_fasta "Step6_1_"$type1"_DMGs_vs_"$type1"_orfs_sort_single_column.identifier"
 
 cat "Step6_1_"$type1"_DMGs.fasta" > split_input.fasta
 seq_num=`grep -c ">" split_input.fasta`
-if [[ $num_blast_proc -gt $seq_num ]]
+if [[ $set_num_blast_proc -gt $seq_num ]]
 	then
 	num_blast_proc=1
 	else
@@ -1892,7 +1892,7 @@ rm -f "seq_split_"*".blast"  "seq_split"*".fasta" split_input.fasta
 
 cat "Step6_1_"$type1"_DMGs.fasta" > split_input.fasta
 seq_num=`grep -c ">" split_input.fasta`
-if [[ $num_blast_proc -gt $seq_num ]]
+if [[ $set_num_blast_proc -gt $seq_num ]]
 	then
 	num_blast_proc=1
 	else
@@ -1924,7 +1924,7 @@ for blast_db in $type1_dbname_list_genome
 
 	cat "Step6_3_"$type1"_DMGs.fasta" > split_input.fasta
 	seq_num=`grep -c ">" split_input.fasta`
-	if [[ $num_blast_proc -gt $seq_num ]]
+	if [[ $set_num_blast_proc -gt $seq_num ]]
 		then
 		num_blast_proc=1
 		else
@@ -2344,7 +2344,7 @@ if $identify_overlapping
 	
 		cat "BADGE_"$type1"_vs_"$type2"_DMGs.fasta" > split_input.fasta
 		seq_num=`grep -c ">" split_input.fasta`
-		if [[ $num_blast_proc -gt $seq_num ]]
+		if [[ $set_num_blast_proc -gt $seq_num ]]
 			then
 			num_blast_proc=1
 			else
